@@ -1,0 +1,92 @@
+* {
+  font-family: poppins;
+  margin: 0;
+}
+
+header {
+  height: 15vh;
+  background-color: #155294;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 20% auto;
+}
+@media (max-width: 600px) {
+  header {
+    background-color: lightgreen;
+  }
+}
+#navBar {
+}
+#navBar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; /* Centraliza os itens dentro do ul */
+  align-items: center;
+  height: 100%;
+  padding: 0; /* Remove padding padrão */
+  gap: 2vw; /* Controla o espaçamento entre os itens */
+}
+
+#navBar li {
+  display: flex;
+  list-style: none;
+  margin-right: 0;
+  justify-content: right;
+  margin-right: 1vh;
+}
+#navBar a {
+  color: white;
+  text-decoration: none;
+}
+#navBar i {
+  color: white;
+  font-size: 24px; /* Ajuste para o tamanho desejado */
+  width: auto;
+}
+
+#navBar a:hover {
+  cursor: pointer;
+  color: #050c05;
+  transition: all 0.1s;
+  font-size: large;
+  width: 100%;
+}
+
+#logotipo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+}
+
+#logotipo img {
+  height: 30%;
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.container h2 {
+  text-align: center;
+  margin-top: 5%;
+}
+.card {
+  border: 1px solid rgb(190, 171, 171);
+  margin: 5%;
+  padding: 0;
+  border-radius: 25px;
+  background-color: #4077b3c9;
+}
+.form-input {
+  display: flex;
+  flex-direction: row;
+  margin: 25px;
+}
+.form-input p {
+  margin-right: 5px;
+}
