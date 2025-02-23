@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Pedro Marques" />
+
+    <meta
+      name="description"
+      content="Automatize e simplifique o preenchimento de propostas de licitação com a Proposta Express. Acesse e veja como é fácil!"
+    />
+    <title>Proposta EXPRESS</title>
+  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Phudu:wght@300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet"
+  />
+  <script
+    src="https://kit.fontawesome.com/1b28686ebe.js"
+    crossorigin="anonymous"
+  ></script>
+  <style>
+    * {
+      font-family: poppins;
+      margin: 0;
+    }
+
+    header {
+      height: 15vh;
+      background-color: #155294;
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-columns: 20% auto;
+    }
+    @media (max-width: 600px) {
+      header {
+        background-color: lightgreen;
+      }
+    }
+    #navBar {
+    }
+    #navBar ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end; /* Centraliza os itens dentro do ul */
+      align-items: center;
+      height: 100%;
+      padding: 0; /* Remove padding padrão */
+      gap: 2vw; /* Controla o espaçamento entre os itens */
+    }
+
+    #navBar li {
+      display: flex;
+      list-style: none;
+      margin-right: 0;
+      justify-content: right;
+      margin-right: 1vh;
+    }
+    #navBar a {
+      color: white;
+      text-decoration: none;
+    }
+    #navBar i {
+      color: white;
+      font-size: 24px; /* Ajuste para o tamanho desejado */
+      width: auto;
+    }
+
+    #navBar a:hover {
+      cursor: pointer;
+      color: #050c05;
+      transition: all 0.1s;
+      font-size: large;
+      width: 100%;
+    }
+
+    #logotipo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-left: 10px;
+    }
+
+    #logotipo img {
+      height: 30%;
+      position: absolute;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    main {
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+    .container h2 {
+      text-align: center;
+      margin-top: 5%;
+    }
+    .card {
+      border: 1px solid rgb(190, 171, 171);
+      margin: 5%;
+      padding: 0;
+      border-radius: 25px;
+      background-color: #4077b3c9;
+    }
+    .form-input {
+      display: flex;
+      flex-direction: row;
+      margin: 25px;
+    }
+    .form-input p {
+      margin-right: 5px;
+    }
+  </style>
+  <body>
+    <header>
+      <nav id="logotipo">
+        <img src="img/logotipo.svg" alt="Logotipo" />
+      </nav>
+      <nav id="navBar">
+        <ul>
+          <li><i class="fa-duotone fa-solid fa-file-signature"></i></li>
+          <li><a href="">Início</a></li>
+          <li><a href="">Como funciona</a></li>
+          <li><a href="">Gerar Proposta</a></li>
+          <li><a href="">Contato</a></li>
+          <li><a href="">Login/Cadastro</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="container">
+        <h2>Preencha as informações gerais</h2>
+        <nav class="card">
+          <form action="">
+            <h2>Informações do Órgão</h2>
+            <div class="form-input">
+              <p>Nome do Órgão:</p>
+              <input type="text" name="nome" placeholder="Prefeitura de..." />
+            </div>
+          </form>
+        </nav>
+      </section>
+      <section class="container">
+        <h2>Preencha as informações da sua proposta</h2>
+        <nav class="card">
+          <form action="">
+            <h2>Proposta Comercial</h2>
+            <div class="form-input">
+              <p>Nome do Órgão:</p>
+              <input type="text" name="nome" placeholder="Prefeitura de..." />
+            </div>
+          </form>
+        </nav>
+      </section>
+    </main>
+  </body>
+</html>
