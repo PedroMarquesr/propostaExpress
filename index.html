@@ -45,10 +45,119 @@
         <h2>Preencha as informações gerais</h2>
         <nav class="card">
           <form action="">
-            <h2>Informações do Órgão</h2>
+            <h2>Informações da Licitação</h2>
             <div class="form-input">
               <p>Nome do Órgão:</p>
-              <input type="text" name="nome" placeholder="Prefeitura de..." />
+              <input
+                type="text"
+                name="nome"
+                placeholder="Prefeitura de..."
+                required
+              />
+            </div>
+            <div class="form-input">
+              <p>Número do pregão:</p>
+              <input
+                type="text"
+                name="numero"
+                placeholder="xxxx/2025"
+                required
+              />
+            </div>
+            <div class="form-input">
+              <p>Número do processo:</p>
+              <input
+                type="text"
+                name="processo"
+                placeholder="xxxxx/2025"
+                required
+              />
+            </div>
+
+            <div class="form-textarea">
+              <p></p>
+              <label for="objeto">Objeto do certame:</label>
+              <textarea
+                name="objeto"
+                id="objeto"
+                rows="4"
+                cols="50"
+                placeholder="Descreva o objeto da Licitação..."
+              ></textarea>
+            </div>
+            <h2>Informações da Proponente</h2>
+            <div class="form-input">
+              <p>Razão Social:</p>
+              <input
+                type="text"
+                name="razaosocial"
+                placeholder="Nome da Empresa"
+                required
+              />
+            </div>
+            <div class="form-input">
+              <p>CNPJ:</p>
+              <input
+                type="number"
+                name="CNPJ"
+                placeholder="CNPJ da Empresa"
+                required
+              />
+            </div>
+            <div class="form-input">
+              <p>Endereço:</p>
+              <input
+                type="text"
+                name="endereco"
+                placeholder="Endereço da Empresa"
+                required
+              />
+            </div>
+            <div class="form-input">
+              <p>Telefone:</p>
+              <input
+                type="number"
+                name="telefone"
+                placeholder="Telefone da Empresa"
+                required
+              />
+            </div>
+            <div class="form-input">
+              <p>Email:</p>
+              <input
+                type="email"
+                name="email"
+                placeholder="Email da Empresa"
+                required
+              />
+            </div>
+            <div class="form-input">
+              <p>Responsável legal:</p>
+              <input
+                type="text"
+                name="responsavel"
+                placeholder="Nome do Responsável legal"
+                required
+              />
+            </div>
+            <h2>Informações de pagamento</h2>
+            <div class="form-input">
+              <p>Banco</p>
+              <input type="text" name="banco" placeholder="Nome do Banco" />
+            </div>
+
+            <div class="form-input">
+              <p>Agência</p>
+              <input
+                type="text"
+                name="agencia"
+                placeholder="Número da agência"
+              />
+            </div>
+
+            <div class="form-input">
+              <p>Conta</p>
+              <input type="text" name="conta" placeholder="Número da conta" />
             </div>
           </form>
         </nav>
