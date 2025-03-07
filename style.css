@@ -82,11 +82,6 @@ main {
   border-radius: 25px;
   background-color: #4077b3c9;
   display: grid;
-  border: 1px solid red;
-}
-
-.container {
-  border: 1px solid red;
 }
 
 /* Form styling */
