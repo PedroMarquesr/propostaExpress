@@ -40,13 +40,14 @@ header {
 #navBar i {
   color: white;
   text-decoration: none;
+  display: inline-block;
 }
 
 #navBar a:hover {
   cursor: pointer;
   color: #050c05;
-  transition: all 0.1s;
-  font-size: large;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-5px);
 }
 
 #logotipo {
