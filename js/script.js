@@ -9,22 +9,22 @@ function adicionarItem() {
   let celulaValorUnitario = novaLinha.insertCell();
   let celulaValorTotal = novaLinha.insertCell();
   let celulaRemover = novaLinha.insertCell();
+  let celulaAdicionarItem = novaLinha.insertCell();
 
-  celulaItem.innerHTML = `<input type="number" placeholder="N°">`;
-  celulaQuantidade.innerHTML = `<input type="number" min="1" value="1" oninput="calcularTotal(this)">`;
+  celulaItem.innerHTML = `<div class="celula"><input type="number" placeholder="N°" class="table-input-number"></div>`;
+  celulaQuantidade.innerHTML = `<div class="celula"><input type="number" min="1" value="1" oninput="calcularTotal(this)" class="table-input-number popo"></div>`;
   celulaUnidade.innerHTML = `
-    <select>
+    <select class="table-select">
       <option value="unidade">Unidade</option>
       <option value="caixa">Caixa</option>
       <option value="litro">Litro</option>
     </select>`;
-  celulaDescricao.innerHTML = `<input type="text" placeholder="Descrição">`;
-  celulaValorUnitario.innerHTML = `<input type="number" min="0" step="0.01" value="0" oninput="calcularTotal(this)">`;
-
+  celulaDescricao.innerHTML = `<div class="celula"><input type="text" placeholder="Descrição" class="table-input"></div>`;
+  celulaValorUnitario.innerHTML = `<div class="celula"><input type="number" min="0" step="0.01" value="0" oninput="calcularTotal(this)" class="table-input-number"></div>`;
+  celulaValorTotal.innerHTML = `<div class="celula">0.00</div>`;
   celulaValorTotal.classList.add("valorTotal");
-  celulaValorTotal.innerText = "0.00";
 
-  celulaRemover.innerHTML = `<button onclick="removerItem(this)">🗑</button>`;
+  celulaRemover.innerHTML = `<button class="table-button" onclick="removerItem(this)">🗑</button>`;
 }
 
 function calcularTotal(elemento) {

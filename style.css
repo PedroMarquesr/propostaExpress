@@ -103,6 +103,16 @@ main {
   margin: 15px;
 }
 
-.form-textarea textarea {
-  height: auto;
+#tabelaProposta {
+  background-color: #23a3b9;
+}
+.celula {
+  display: flex;
+  justify-content: center;
+}
+.table-input-number {
+  border: 1px solid red;
+  width: 5vw;
+  display: block;
+  align-items: center;
 }
